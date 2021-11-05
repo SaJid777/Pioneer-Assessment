@@ -1,0 +1,193 @@
+.login-bg{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: #FFFFFF;
+    font-family: 'Roboto';
+}
+.part1{
+    position: absolute;
+    width: 1219px;
+    height: 1081px;
+    left: 0px;
+    top: 1px;
+
+    background: radial-gradient(99.87% 413.14% at 0% 4.98%, #443453 0%, #232323 28.23%, #252425 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.part1_img{
+    position: absolute;
+    width: 647px;
+    height: 980px;
+    left: 187px;
+    top: 80px;
+}
+.part2{
+    position: absolute;
+    width: 715px;
+    height: 979px;
+    left: 1012px;
+    top: 52px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.logo_img{
+    position: absolute;
+    left: 71.67%;
+    right: 24.32%;
+    top: 22.69%;
+    bottom: 70.83%;
+    
+}
+.label{
+    position: absolute;
+    left: 61.72%;
+    right: 15.47%;
+    top: 31.67%;
+    bottom: 64.44%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 42px;
+    /* identical to box height, or 140% */
+
+
+    color: #473558;
+}
+.user_email{
+    position: absolute;
+    width: 380px;
+    height: 53px;
+    left: calc(50% - 380px/2 + 444px);
+    top: calc(50% - 53px/2 - 85.5px);
+
+    background: #FFFFFF;
+    border: 2px solid #666666;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.user_pass{
+    position: absolute;
+    width: 380px;
+    height: 53px;
+    left: calc(50% - 380px/2 + 444px);
+    top: calc(50% - 53px/2 - 4.5px);
+
+    background: #FFFFFF;
+    border: 2px solid #666666;
+    box-sizing: border-box;
+    border-radius: 10px;    
+}
+::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    padding-left:5%;
+    color: #707070;
+}
+
+.forgot_pass{
+    position: absolute;
+    left: 76.35%;
+    right: 16.98%;
+    top: 53.06%;
+    bottom: 45.19%;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration:none !important;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FF0000;
+}
+.login_btn{
+    position: absolute;
+    width: 380px;
+    height: 53px;
+    left: 1214px;
+    top: 618px;
+
+    background: #625A99;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.dash1{
+    position: absolute;
+    width: 145px;
+    height: 0px;
+    left: 1219px;
+    top: 729px;
+
+    border: 1px solid #666666;
+}
+.dash2{
+    position: absolute;
+    width: 145px;
+    height: 0px;
+    left: 1446px;
+    top: 729px;
+
+    border: 1px solid #666666;
+}
+.label_or{
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    left: 1403px;
+    top: 717px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-align: center;
+}
+.logo_fb{
+    position: absolute;
+    width: 55px;
+    height: 53.46px;
+    left: 1323px;
+    top: 777px;
+}
+.logo_g{
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: 1448px;
+    top: 777px;
+}
+.label2{
+    position: absolute;
+    left: 65.62%;
+    right: 19.53%;
+    top: 83.06%;
+    bottom: 14.81%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #707070;
+}
+.sign_up{
+    
+    font-weight: bold;
+    text-decoration:none !important;
+}

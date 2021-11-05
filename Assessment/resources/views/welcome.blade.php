@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -15,7 +15,8 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
     </head>
     <body class="login-bg">
-        <form method="post">
+        <form method="POST" action="{{url('/signin')}}">
+            @csrf
             <div class="part1">
                 <img class="part1_img" src="{{asset('img/part1.png')}}">
             </div>
@@ -24,20 +25,26 @@
             </div>
             <img class="logo_img" src="{{asset('img/logo.png')}}">
             <label class="label">Explore new courses... Hurry up!!</label>
-            <input class="user_email" type="email" name="email" placeholder="Email Address" />
-            <input class="user_pass" type="password" name="password" placeholder="Password" />
+            
+            <input class="user_email" type="email" name="email" placeholder="Email Address" required/>
+            <input class="user_pass" type="password" name="password" placeholder="Password" required/>
             <a href="#" class="forgot_pass">Forget Password?</a>
-            <button type="submit" class="login_btn">Log In</button>
+            <button type="submit" class="login_btn" id="user_signin_btn">Log In</button>
             <div class="dash1"></div>
             <div class="dash2"></div>
             <label class="label_or">or</label>
-            <img class="logo_fb" src="{{asset('img/facebook.png')}}">
-            <img class="logo_g" src="{{asset('img/google.png')}}">
+            <a href="#"><img class="logo_fb" src="{{asset('img/facebook.png')}}"></a>
+            <a href="#"><img class="logo_g" src="{{asset('img/google.png')}}"></a>
             <label class="label2">Don't have an account?  <a class="sign_up" href="#">Sign Up</a></label>
         </form>
+        
         
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+    {!! Toastr::message() !!}
+    
     </body>
 </html>
